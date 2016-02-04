@@ -3,6 +3,8 @@ InfluxDB
 
 An Ansible role to install, configure, and manage [InfluxDB](https://github.com/influxdb/influxdb) (a time-series database) v0.9 instances.
 
+This role was forked from a role by [Ross McDonald](https://github.com/rossmcdonald).
+
 Requirements
 ------------
 
@@ -14,7 +16,7 @@ Installation
 Either clone this repository, or install through Ansible Galaxy directly using the command:
 
 ```
-ansible-galaxy install rossmcdonald.influxdb
+ansible-galaxy install tima.influxdb
 ```
 
 Role Variables
@@ -58,8 +60,13 @@ License
 
 MIT
 
-Author
+Credits
 ------
 
-Created by [Ross McDonald](https://github.com/rossmcdonald).
+Fork Maintainer:
+[Timothy Appnel](https://github.com/tima)
+
+Forked from:
+[Ross McDonald](https://github.com/rossmcdonald)
+
 
