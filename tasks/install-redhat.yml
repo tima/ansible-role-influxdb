@@ -1,7 +1,7 @@
 ---
 - name: Install any necessary dependencies [RedHat/CentOS]
-  yum: 
-    name: "{{ item }}" 
+  yum:
+    name: "{{ item }}"
     state: present
   with_items:
     - curl
@@ -15,14 +15,13 @@
   when: influxdb_install_url is not defined or influxdb_install_url == None
 
 - name: Install InfluxDB packages [RHEL/CentOS]
-  yum: 
-    name: influxdb
-    state: latest
+  yum:
+    name: influxdb-{{ influxdb_version }}
+    state: present
   when: influxdb_install_url is not defined or influxdb_install_url == None
 
 - name: Install InfluxDB from URL [RHEL/CentOS]
-  yum: 
+  yum:
     name: "{{ influxdb_install_url }}"
     state: present
   when: influxdb_install_url is defined and influxdb_install_url != None
-  
