@@ -1,6 +1,8 @@
 InfluxDB
 ========
 
+This is currently a hacked up fork of Ross McDonald's role for the explicit use with the Ansible lightbulb repo's workshop solutions. This was done to avoid future unexpected breaking changes made by the underlying software that are really annoying to deal with.
+
 An Ansible role to install, configure, and manage [InfluxDB](https://github.com/influxdb/influxdb) (a time-series database) v0.9 instances.
 
 This role was forked from a role by [Ross McDonald](https://github.com/rossmcdonald).
