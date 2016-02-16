@@ -1,6 +1,6 @@
 ---
 # Channel of InfluxDB to install (stable, unstable, nightly)
-influxdb_install_version: stable
+influxdb_version: 0.9.6.1
 
 # If multiple servers are specified, whether to create a clustered configuration
 # NOTE:
